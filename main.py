@@ -1,3 +1,4 @@
+import sys
 from tkinter import *
 from tkinter.ttk import *
 from googletrans import Translator
@@ -95,7 +96,7 @@ def add_word():
 
 # done
 def exit_com():
-    quit()
+    sys.exit()
 
 
 # done
@@ -295,3 +296,5 @@ result_5 = Label(
 result_5.grid(row=4, column=3)
 
 app.mainloop()
+
+# pyinstaller --noconsole --onefile hello.py
